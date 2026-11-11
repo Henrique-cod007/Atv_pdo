@@ -82,7 +82,7 @@ if  ($_SERVER['REQUEST_METHOD'] === 'POST'){
         #div_01 {
             background-color: #ffffff;
             width: 500px;
-            height: 600px;
+            height: 660px;
             padding: 30px;
             border-radius: 10px;
         }
@@ -107,7 +107,7 @@ if  ($_SERVER['REQUEST_METHOD'] === 'POST'){
             cursor: pointer;
             border-radius: 10px;
         }
-
+        
         button:hover {
             background-color: #45a049;
         }
@@ -135,6 +135,10 @@ if  ($_SERVER['REQUEST_METHOD'] === 'POST'){
             font-size:12px ;
             color: rgb(121, 121, 121) ;
 
+        }
+        a{
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
@@ -170,10 +174,15 @@ if  ($_SERVER['REQUEST_METHOD'] === 'POST'){
             
 
             <button type="submit">Enviar</button>
+            <button type="button" style="background-color: rgb(131, 127, 127);"
+            onclick="window.location.href='consulta.php'">
+            Consulta
+            </button>
+            
 
         </form>
-
+            
     </div>
-
+    
 </body>
 </html>

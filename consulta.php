@@ -17,12 +17,47 @@ $alunos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Alunos</title>
 </head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif ;
+        
+        background-color: #04276c;
+        height: 100vh
+    }
+
+    table{
+        width: 720px;
+        border-collapse: collapse;
+        margin: auto;
+        padding: 10px;
+        overflow: hidden;
+        border-collapse: collapse;
+        border-radius: 15px;
+        text-align: center;
+    }
+    tbody>tr:nth-child(2n){
+            background-color: rgba(56, 16, 95, 0.64);
+    }
+    tr{
+        background-color:rgb(135, 180, 240) ;
+        border: 1px solid black;
+        
+    }
+    th{
+        border: 1px solid black;
+        padding: 7px;
+    }
+    td{
+        background-color: rgb(240, 240, 240);
+        border: 1px solid black;}
+</style>
 <body>
 
-    <h2>Lista de Alunos</h2>
-
-    <table border="1" cellpadding="10">
+    <table  cellpadding="10">
         <thead>
+            <tr >
+                <th colspan="6"><h3>Lista de Alunos</h3></th>
+            </tr>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
